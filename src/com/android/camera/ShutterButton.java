@@ -23,14 +23,14 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 
-//import com.android.camera.ui.RotateImageView;
+import com.android.camera.ui.RotateImageView;
 
 /**
  * A button designed to be used for the on-screen shutter button.
  * It's currently an {@code ImageView} that can call a delegate when the
  * pressed state changes.
  */
-public class ShutterButton extends ImageView {
+public class ShutterButton extends RotateImageView {
 
     private final ArraySet<OnShutterButtonListener> mListeners = new ArraySet<>();
 
